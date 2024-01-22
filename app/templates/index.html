@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CyberShield</title>
+
+  <script src="https://kit.fontawesome.com/6cc1a5eb9c.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/appLogo.png')}}" type="image/x-icon" />
+</head>
+
+<body>
+
+  <div id="topBar">
+
+    <div id="appLogo">
+      <img id="appL1" src="{{ url_for('static', filename='images/appLogo.png')}}" alt="">
+      <h1 id="appT">CyberShield</h1>
+    </div>
+
+    <div id="otherMenus">
+      <a class="aM" id="homeIcon" href="#">Home</a>
+      <a class="aM" href="#">About us</a>
+
+
+      <div class="dropdown">
+        <button id="a1" class="dropbtn">Detection Tests <i class="fas fa-caret-down"></i></button>
+        <div class="dropdown-content">
+          <a href="#">Profile Completeness Test</a>
+          <a href="#">Activity Anomaly Test</a>
+          <a href="#">Content Analysis Test</a>
+          <a href="#">Image Authenticity Test</a>
+          <a href="#">Social Network Analysis</a>
+          <a href="#">Full Profile Test</a>
+          <a href="#">Deepfake Videos Detector</a>
+        </div>
+      </div>
+
+      <a class="aM" href="#">Reports</a>
+      <i id="modeColor" class="fa-solid fa-moon"></i>
+
+      <div class="creditBalance">
+        <p class="creditB">50</p>
+
+        <img class="creditI" src="{{ url_for('static', filename='images/credits.png')}}" alt="">
+      </div>
+
+    </div>
+
+    <button id="signupButton">Get Started</button>
+  </div>
+
+  <div class="sideBar">
+    <img title="Help" class="sideBarIcon" src="{{ url_for('static', filename='images/chatbot.png')}}" alt="">
+    <img title="Credits" class="sideBarIcon" src="{{ url_for('static', filename='images/credits.png')}}" alt="">
+    <img title="Analytics" class="sideBarIcon" src="{{ url_for('static', filename='images/analytics.png')}}" alt="">
+    <img title="Profile" class="sideBarIcon" src="{{ url_for('static', filename='images/profile.png')}}" alt="">
+  </div>
+
+
+  <div class="flexFreeDetection">
+    <div class="freeDetection">
+
+      <p class="freeTest">1 Credit</p>
+
+      <div class="flexSocialMedia">
+
+        <div class="socialLogo" id="instagramLogo">
+          <img class="socialIcon" src="../static/images/instagram.png" alt="">
+        </div>
+
+        <div class="socialLogo" id="facebookLogo">
+          <img  class="socialIcon" src="../static/images/facebook.png" alt="">
+        </div>
+
+        <div class="socialLogo" id="twitterLogo">
+          <img  class="socialIcon" src="../static/images/twitter.png" alt="">
+        </div>
+
+        <div class="socialLogo" id="linkedinLogo">
+          <img  class="socialIcon" src="../static/images/linkedin.png" alt="">
+        </div>
+
+      </div>
+
+      <input type="text" placeholder="Enter a Username to Test">
+
+    </div>
+    <div class="progressData"></div>
+  </div>
+
+  <script type="module" src="{{ url_for('static', filename='js/script.js')}}" type="image/x-icon"></script>
+</body>
+
+</html>

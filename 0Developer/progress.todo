@@ -1,0 +1,65 @@
+
+// 1. Routing all pages in {routes.py} : index/orders/portfolio/stocks/wallet/watchlist/stockinfo
+
+// 2. Create a Navbar with menus and appName and Logo
+
+// 3. Copy navbar in stocks.html
+
+// 4. Make all JS Function to change app page onclick menubars
+
+// 5. Create a SearchBar to searchStocks with NSE stocks data 
+
+// 6. Store data onclick in local storage of that stock
+
+// 7. Style searchbar and suggestion bar
+
+// 8. Create a stockinfo page where user can buy or sell stock after clicking on the stock with data all stock info on that page
+
+// 9. On StockInfo Page create top bar with back button, see button for more analytics, save button, and download button
+
+// 10. Display Stock Name and NSE
+
+// 11. display stockticker down the stock name
+
+// 12. Pass stock ticker from js file to stockData.py and vice versa
+
+// 13. Connect other python pages with flask app
+
+// 14. Find Live Data in proper manner in python and send that data in js
+
+// 15. show first line value increases or decreased and percent and curr price
+
+// 16. Show all data include buy and sell button in stockinfo.html
+
+// 17. Setup wallet.html and copy menu and navbar 
+
+// 18. Create 3 boxes one for wallet , transactionhistory, analytics, 
+
+// 19. Fill up Wallet Box
+
+// 20. Add 50000rs every month in saving account
+
+// 21. Create add money and withdraw money logic from saving to trading and viceverse
+
+// 22. Create transaction history last 10 transaction div and apply logic using local storage ::: DO it with Logic insertion in array at index 0 and delete last element by shifting
+
+// 22. Write buy button logic to buy share and store it in array inside object : StockName/StockTicker/NoOfShares/currPrice/BuyPrice/CurrPricePerShare/BuyPricePerShare/TypeOfBuy-Cash/Intraday
+
+// 23. SetUp Portfolio Page
+
+// 24. Create Table with all necessary details
+
+// 25. Run a for loop of potfolio array in local storage and add all details dynamically of stocks purchased
+
+// 26. Update every stock curr price in portfolio in every 10 seconds using for loop and update portfolio in localstorage and update table Too
+
+// 27. Make Sell Box and show when user clicks on sell button and store index no to be sell
+
+// 28. Create all function decrease increase
+
+29. Now final Share Logic if quantity to be sell is max then delete that data in pf and if its less than max then only decreade quantity in the pf data
+
+Changes to make for this : if(quantityToSell == totalShareInPortfolio) : Delete whole index after selling 
+else : Update TotalBuySharePrice/TotalCurrSharePrice
+and updatequantity by reducing
+Update Trans History

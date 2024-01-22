@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --dark: #7FC7D9;
+    --light: #DCF2F1;
+    --material: #0F1035;
+    --text: black;
+    --lightText: #ffffff ;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    background-color: var(--light);
+    user-select: none;
+    color: var(--material);
+    font-family: 'Open Sans';
+    overflow: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+#appT {
+    font-weight: 600;
+    font-size: 28px;
+    padding-left: 3%;
+}
+
+#appL1 {
+    width: 10%;
+    padding-top: 0.46%;
+}
+
+#appLogo {
+    display: flex;
+    align-items: center;
+    margin-left: 2%;
+
+}
+
+#otherMenus{
+    display: flex;
+    align-items: center;
+    margin-left: -4.5%;
+}
+
+
+#topBar {
+    background-color: var(--dark);
+    width: 100%;
+    height: 12vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.dropbtn {
+    background-color: inherit;
+    color: var(--material);
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--dark);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: var(--text);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: var(--material);
+    color: var(--lightText);
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+#signupButton{
+    width: 10%;
+    height: 6vh;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    color: var(--lightText);
+    background-color: var(--material);
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: 2%;
+    cursor: pointer;
+   
+}
+
+.aM, #a1{
+    font-size: 20px;
+    text-decoration: none;
+    color: var(--text);
+    font-weight: 500;
+    font-family: 'Open Sans';
+    margin-left: 9%;
+    white-space: nowrap;
+    
+}
+
+.aM:hover, #a1:hover{
+  font-weight: 600;
+}
+
+i{
+    padding-left: 5%;
+}
+
+#modeColor{
+    
+    font-size: 28px;
+    margin-left: 2%;
+    cursor: pointer;
+   
+}
+
+.sideBar{
+    width: 7%;
+    height: 60vh;
+    border-radius: 0px 15px 15px 0px;
+    background-color: var(--dark);
+    position: fixed;
+    margin-top: 5%;
+}
+
+.sideBarIcon{
+    width: 50%;
+    display: block;
+    margin: auto;
+    margin-top: 39%;
+    cursor: pointer;
+    -webkit-filter: drop-shadow(2px 2px 2px #222222);
+    filter: drop-shadow(2px 2px 2px #222222);
+}
+
+#homeIcon{
+    font-weight: 600;
+    
+}
+
+.freeDetection{
+    width: 60%;
+    height: 80vh;
+    background-color:var(--dark);
+    display: block;
+    margin: auto;
+    margin-left: 9.5%;
+    margin-top: 1.8%;
+    border-radius: 13px;
+}
+
+.progressData{
+
+    width: 27%;
+    height: 80vh;
+    background-color:var(--dark);
+    display: block;
+    margin: auto;
+    margin-right: 1.8%;
+    margin-top: 1.8%;
+    border-radius: 13px;
+    
+}
+
+.flexFreeDetection{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.freeTest{
+    background-color: var(--material);
+    color: var(--lightText);
+    width: fit-content;
+    margin-left: auto;
+    padding: 0.8% 2%;
+    border-radius: 0px 0px 0px 7px;
+}
+
+.flexSocialMedia{
+    display: flex;
+    
+   
+}
+
+.socialLogo{
+  
+    background-color: var(--light);
+    width: fit-content;
+    margin-left: 7%;
+    width: 12%;
+    cursor: pointer;
+    border-radius: 50px;
+    
+}
+
+.socialIcon{
+    width: 70%;
+    display: block;
+    margin: auto;
+    padding: 16% 0%;
+  
+    
+}
+
+#instagramLogo{
+ 
+    background-color: var(--material);
+}
+
+input{
+
+    width: 60%;
+    height: 5vh;
+    background-color: var(--dark);
+    border-width: 0px 0px 2px 0px;
+    border-color: var(--light);
+    outline: none;
+    color: var(--text);
+    font-family: 'Open Sans';
+    font-size: 18px;
+    display: block;
+    margin-left: 7%;
+    margin-top: 7%;
+
+}
+
+input:focus{
+    border-color: var(--material);
+}
+
+.creditBalance{
+    width: fit-content;
+    padding: 1% 5%;
+    border-radius: 100px;
+    background-color: var(--light);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text);
+    font-size: 20px;
+    margin-left: 4%;
+}
+
+.creditI{
+    width: 100%;
+    margin-left: 50%;
+}

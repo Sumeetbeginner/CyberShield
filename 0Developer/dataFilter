@@ -1,0 +1,14 @@
+
+open = regularMarketOpen
+prev close = regularMarketPreviousClose
+today low = dayLow
+today high = dayHigh
+52 week low = fiftyTwoWeekLow
+52 week high = fiftyTwoWeekHigh
+volume curr = regularMarketVolume
+avg/curr price = currentPrice
+
+percent increase = (curr price - open price / open price) * 100
+Change in Rupees=(Current Price−Open Price)
+
+
