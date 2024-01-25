@@ -6,4 +6,6 @@ app = Flask(__name__)
 CORS(app)
 
 from app import routes
-# from app import stockData
+from app.tests.FraudDetection import instagramData
+from app.tests.FraudDetection import fraudPredict
+

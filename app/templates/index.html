@@ -36,7 +36,7 @@
           <a href="#">Image Authenticity Test</a>
           <a href="#">Social Network Analysis</a>
           <a href="#">Full Profile Test</a>
-          <a href="#">Deepfake Videos Detector</a>
+          <a id="impTest" href="#">Deepfake Videos Detector</a>
         </div>
       </div>
 
@@ -44,7 +44,7 @@
       <i id="modeColor" class="fa-solid fa-moon"></i>
 
       <div class="creditBalance">
-        <p class="creditB">50</p>
+        <p class="creditB">30</p>
 
         <img class="creditI" src="{{ url_for('static', filename='images/credits.png')}}" alt="">
       </div>
@@ -87,11 +87,26 @@
 
       </div>
 
-      <input type="text" placeholder="Enter a Username to Test">
+      <input id="socialUsername" type="text" placeholder="Enter a Username to Test">
+
+      <select name="selectTest" id="testType">
+        <option value="1">Fraud Profile Test </option>
+        <option value="2">Adult Content Test</option>
+        <option value="3">Violent Content Test</option>
+        <option value="4">Information Accuracy Test</option>
+        <option value="5">Social Network Authenticity Test</option>
+        <option value="6">Image Authenticity Test</option>
+        <option value="7">Hate Speech Detection Test</option>
+        <option value="8">Bot or Automation Test</option>
+      </select>
+
+      <button id="btnStart">Start Test</button>
 
     </div>
-    <div class="progressData"></div>
+    <div id="progressData" class="progressData"></div>
   </div>
+
+
 
   <script type="module" src="{{ url_for('static', filename='js/script.js')}}" type="image/x-icon"></script>
 </body>

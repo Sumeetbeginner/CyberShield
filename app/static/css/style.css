@@ -188,6 +188,7 @@ i{
     margin-right: 1.8%;
     margin-top: 1.8%;
     border-radius: 13px;
+    overflow-y: scroll;
     
 }
 
@@ -274,4 +275,108 @@ input:focus{
 .creditI{
     width: 100%;
     margin-left: 50%;
+}
+
+select{
+    width: 50%;
+    display: block;
+    margin-left: 7%;
+    height: 6.8vh;
+    text-align: center;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    margin-top: 7%;
+    font-size: 17px;
+    font-family: 'Open Sans';
+    background-color: var(--light);
+    color: var(--text);
+    cursor: pointer;
+}
+
+select:focus{
+    border: solid 2px var(--material);
+}
+
+
+#impTest{
+    background-color: rgb(156, 156, 22);
+}
+
+
+#btnStart{
+    width: 30%;
+    height: 6.6vh;
+    background-color: var(--material);
+    border: none;
+    outline: none;
+    color: var(--lightText);
+    font-size: 19px;
+    border-radius: 10px;
+    display: block;
+    margin-left: 7%;
+    margin-top: 7.5%;
+    cursor: pointer;
+}
+
+.progressData p{
+
+    text-align: center;
+    width: 90%;
+    display: block;
+    margin: auto;
+    margin-top: 5.5%;
+}
+
+.progressStyle{
+    color: greenyellow;
+}
+
+.errorStyle{
+    color: rgb(243, 43, 43);
+}
+.workingStyle{
+    color: rgb(192, 192, 21);
+}
+
+
+.errorImg{
+    display: block;
+    margin: auto;
+    width: 50%;
+    margin-top: 10%;
+}
+
+
+.profileImg{
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    border-radius: 15px;
+}
+
+.hackText{
+    color: rgb(243, 43, 43);
+    margin-top: 10%;
+    text-align: center;
+}
+
+.fr1{
+    text-align: center;
+    color: var(--lightText);
+    margin-top: 10%;
+    
+}
+
+.fr2{
+    color: var(--lightText);
+    text-align: center;
+    display: block;
+    margin: auto;
+    margin-top: 10%;
+    font-size: 40px;
+    width: fit-content;
+    padding: 5% 5%;
+    background-color: green;
+    border-radius: 100px;
 }
